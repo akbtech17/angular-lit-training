@@ -11,6 +11,8 @@ export class MycomponentComponent implements OnInit {
   fno: number = 70
   sno: number = 30
   total: number = 0
+  city: string = "mumbai"
+  mstatus: boolean = true
 
   add(): number {
     this.total = this.fno + this.sno

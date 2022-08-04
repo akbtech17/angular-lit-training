@@ -1,5 +1,13 @@
+<p>Interpolation</p>
 <p>Name is {{name}}</p>
 <p>Age is {{age}}</p>
 <p>{{age > 25 ? 'He is eligible for CR' : 'Not eligible for CR'}}</p>
 <p> Sum = {{30 + 40}}</p>
 <p> Add = {{add()}}</p>
+<hr>
+<h3>Property Binding</h3>
+<input type="text" [value]="city" /><br>
+<input type="button" [value]="city" /><br><br>
+<input type="button" value="Click" [disabled]="age > 25 ? true : false" />
+<br>
+<input type="checkbox" [checked]="mstatus" /> Married/UnMarried
