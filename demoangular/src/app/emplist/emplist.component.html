@@ -26,4 +26,22 @@
 </ol>
 
 <hr>
-<p>{{GetTotal()}}</p>
+<!-- <p>{{GetTotal()}}</p> -->
+<h2>Emplyee Listing</h2>
+<hr>
+<table>
+    <thead>
+        <td>Sno</td>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Salary</td>
+        <td>Department</td>
+    </thead>
+    <tbody *ngFor="let emp of EmpArr; let i = index">
+        <td>{{i}}</td>
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.dept}}</td>
+    </tbody>
+</table>
