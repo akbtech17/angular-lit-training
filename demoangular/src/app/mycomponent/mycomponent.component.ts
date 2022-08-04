@@ -14,6 +14,10 @@ export class MycomponentComponent implements OnInit {
   city: string = "mumbai"
   mstatus: boolean = true
 
+  Show(): void {
+    alert('Name is '+this.name+' and age is '+this.age);
+  }
+
   add(): number {
     this.total = this.fno + this.sno
     return this.total
