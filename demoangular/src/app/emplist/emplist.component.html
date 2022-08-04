@@ -1,11 +1,26 @@
+<hr>
 <ol *ngFor="let day of weekdays; let i = index;">
     <!-- ngFor is directive equivalent to forEach loop -->
     <!-- day is a run time variable -->
-    <li>{{i}} {{day}}</li>
+    <li value={{i}}>{{day}}</li>
 </ol>
+
+<hr>
+
 <ng-container *ngIf="age > 30; else elseTemplate;">
     <h4>Suitable for marriage</h4>
 </ng-container>
 <ng-template #elseTemplate>
     <h4>Not suitable for marriage</h4>
 </ng-template>
+
+<hr>
+
+<ol *ngFor="let item of weekdays; let i = index;">
+    <ng-container *ngIf="i%2 == 0; else elseTemplate2">
+        <li value={{i}} style="color: blue;">{{item}}</li>
+    </ng-container>
+    <ng-template #elseTemplate2>
+        <li value={{i}} style="color: red;">{{item}}</li>
+    </ng-template>
+</ol>
