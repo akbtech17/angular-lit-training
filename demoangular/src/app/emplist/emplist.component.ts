@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmplistComponent implements OnInit {
   weekdays: string[] = ['sunday', 'monday', 'tuesday', 'wednesday', 'thrusday', 'friday', 'saturday'];
+  age: number = 30
   constructor() { }
 
   ngOnInit(): void {
