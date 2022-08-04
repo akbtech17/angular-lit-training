@@ -17,6 +17,13 @@ export class EmplistComponent implements OnInit {
     {id: 14, name: 'Aakrithi', salary:55000, dept:'ITM'},
     {id: 15, name: 'Bhavya', salary:65000, dept:'IMT'}
   ]
+  GetTotal(): number {
+    let total: number = 0
+    for(var i=0; i<this.EmpArr.length; i++) {
+      total += total+this.EmpArr[i].salary
+    }
+    return total
+  }
   constructor() { }
 
   ngOnInit(): void {
