@@ -13,3 +13,6 @@ class Person {
         console.log(this.name + " " + this.age)
     }
 }
+
+var p1 = new Person('Tom', 29)
+p1.Show()
