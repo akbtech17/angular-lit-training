@@ -3,6 +3,9 @@
     <!-- day is a run time variable -->
     <li>{{day}}</li>
 </ol>
-<ng-container *ngIf="age > 30">
+<ng-container *ngIf="age > 30; else elseTemplate">
     <h4>Suitable for marriage</h4>
 </ng-container>
+<ng-template #elseTemplate>
+    <h4>Not suitable for marriage</h4>
+</ng-template>
