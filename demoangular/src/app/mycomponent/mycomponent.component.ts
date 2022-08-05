@@ -14,6 +14,7 @@ export class MycomponentComponent implements OnInit {
   total: number = 0
   city: string = "mumbai"
   mstatus: boolean = true
+  myname: string = ''
 
   Show(): void {
     alert('Name is '+this.name+' and age is '+this.age);
@@ -24,7 +25,13 @@ export class MycomponentComponent implements OnInit {
     return this.total
   }
 
-  constructor() { }
+  // normally services are injected in the constructor of the Comonents
+  constructor(private movieservice: MovieserviceService) {
+    // as soon as Component is created, 
+    // object of service is created
+    this.myname = this.movieservice.Display("Anshul");
+    // console.log(this.myname);
+   }
 
   ngOnInit(): void {
   
