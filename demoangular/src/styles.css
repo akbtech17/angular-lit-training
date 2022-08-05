@@ -19,4 +19,10 @@ thead {
 
 tr :hover {
     color: magenta;
+    background-color: aquamarine;
+}
+
+tr {
+    border: 1px solid black;
+    background-color: deeppink;
 }
