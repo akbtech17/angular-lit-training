@@ -2,5 +2,5 @@ export interface Movie {
     id: number
     name: string
     year: number
-    rating: null
+    rating: number
 }
