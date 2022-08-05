@@ -38,10 +38,12 @@
         <td>Department</td>
     </thead>
     <tbody *ngFor="let emp of EmpArr; let i = index">
-        <td>{{i}}</td>
-        <td>{{emp.id}}</td>
-        <td>{{emp.name}}</td>
-        <td>{{emp.salary}}</td>
-        <td>{{emp.dept}}</td>
+        <tr>
+            <td>{{i}}</td>
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.dept}}</td>
+        </tr>
     </tbody>
 </table>
