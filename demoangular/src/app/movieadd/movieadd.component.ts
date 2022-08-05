@@ -7,11 +7,11 @@ import { Movie } from '../movie';
   styleUrls: ['./movieadd.component.css']
 })
 export class MovieaddComponent implements OnInit {
-  movieData: Movie = {id: 0, name:'', year:0, rating:0}
+  moviedata: Movie = {id: 0, name:'', year:0, rating:0}
 
   SaveData(data: Movie) {
-    this.movieData = data;
-    console.log(this.movieData);
+    this.moviedata = data;
+    console.log(this.moviedata);
   } 
 
   constructor() { }
