@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { HomeComponent } from './home/home.component';
+import { MovieaddComponent } from './movieadd/movieadd.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomponentComponent,
     EmplistComponent,
-    HomeComponent
+    HomeComponent,
+    MovieaddComponent
   ],
   imports: [
     BrowserModule,
