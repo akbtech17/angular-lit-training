@@ -8,6 +8,7 @@ import { Employee } from '../employee';
 })
 export class EmplistComponent implements OnInit {
   weekdays: string[] = ['sunday', 'monday', 'tuesday', 'wednesday', 'thrusday', 'friday', 'saturday'];
+  navBarItems: string[] = ['Home', 'Hotels', 'Travel', 'Taxi Rent','Search','Login']
   age: number = 30
   EmpArr: Employee[] = [
     {id: 10, name: 'Anshul', salary:15000, dept:'IT'},

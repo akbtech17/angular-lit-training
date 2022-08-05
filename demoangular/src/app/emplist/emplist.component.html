@@ -1,3 +1,6 @@
+<ul *ngFor="let nitem of navBarItems; let i = index;"> 
+    <li>{{nitem}}</li>
+</ul>
 <hr>
 <ol *ngFor="let day of weekdays; let i = index;">
     <!-- ngFor is directive equivalent to forEach loop -->
